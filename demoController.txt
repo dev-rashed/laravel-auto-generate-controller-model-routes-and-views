@@ -1,0 +1,109 @@
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class DemoController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        // $demos = \App\Models\Demo::all();
+        // return view('demo.index',compact( $demos ));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //  return view('demo.create');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        // $request->validate([
+        //     'name'=>'required'
+        // ]);
+
+        // \App\Models\Demo::create();
+        // return response([
+        //     'data'=>'1',
+        //     'message'=>'Successfully added'
+        // ]);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        // $demo = \App\Models\Demo::find($id);
+        // return view('demo.show',compact( $demo ));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        // $demo = \App\Models\Demo::find($id);
+        // return view('demo.edit',compact( $demo ));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        // $demo = \App\Models\Demo::find($id);
+
+        // $request->validate([
+        //     'name'=>'required'
+        // ]);
+
+        // $demo->name => $request->name;
+        // $demo->save();
+
+        // return response ([
+        //     'data' => 1,
+        //     'message' => 'Updated'
+        // ]);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        // $demo = \App\Models\Demo::find($id);
+        // $demo->delete();
+
+        // return view('demo.index');
+    }
+}
